@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Formulário de Avaliação</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Formulário de Avaliação</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Sair</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <input type="text" placeholder="Busque aqui..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-inbox"></i> Formulário de Avaliação</a>
+  <ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Página inicial</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon-user"></i> <span>Funcionário</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="funcionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+        <li><a href="funcionario-consulta.html"><i class="icon-search">   </i> Consulta</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon-book"></i> <span>Questionário</span> <span class="label label-important">1</span></a>
+      <ul>
+        <li><a href="questionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+      </ul>
+    </li>
+    <li><a href="avaliacao.html"><i class="icon icon-tint"></i> <span>Formulário de Avaliação</span></a></li>
+  </ul>
+</div>
+<!--sidebar-menu-->
+
+<!--main-container-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.html" title="Para início" class="tip-bottom"><i class="icon-home"></i> Início</a> <a href="#" class="current">Formulário de Avaliação</a> </div>
+    <h1>Formulário de Avaliação</h1>
+  </div>
+
+  <hr>
+
+
+
+  <div class="control-group span12">
+      <label class="control-label">Selecione o Funcionário</label>
+      <div class="controls">
+        <select >
+          <option>Renan</option>
+          <option>Second option</option>
+          <option>Third option</option>
+          <option>Fourth option</option>
+          <option>Fifth option</option>
+          <option>Sixth option</option>
+          <option>Seventh option</option>
+          <option>Eighth option</option>
+        </select>
+      </div>
+      <div class="widget-box">
+
+        <div class="widget-content">
+               <div class="widget-title">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#tab1">Desempenho</a></li>
+                  <li><a data-toggle="tab" href="#tab2">Comportamento</a></li>
+                  <li><a data-toggle="tab" href="#tab3">Técnico</a></li>
+                  <li><a data-toggle="tab" href="#tab4">Conduta</a></li>
+                </ul>            
+              </div>
+              
+              <div class="widget-content tab-content">
+
+                <div id="tab1" class="tab-pane active">
+
+                    
+
+                    <div class="accordion-group widget-box">
+                      <div class="accordion-heading">
+                        <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>                   
+                          <p style="font-weight:bold">Organização: O funcionário é organizado em suas atividades?</p>
+                          </a> </div>
+                      </div>
+                      <div class="collapse accordion-body" id="collapseGTwo">
+                        <div class="widget-content">     
+                         
+                          <label>
+                            <input type="radio" name="radios1" />  Nunca</label>
+                          <label>
+                            <input type="radio" name="radios1" />  Pouco</label>
+                          <label>
+                            <input type="radio" name="radios1" />  Algumas vezes</label>
+                          <label>
+                            <input type="radio" name="radios1" />  Muito</label>
+                            <label>
+                            <input type="radio" name="radios1" />  Quase sempre</label>
+                                             
+                            <textarea class="span6"></textarea>
+
+                      </div>
+                      </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                      <div class="accordion-heading">
+                        <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                          <p style="font-weight:bold">Qualidade: Grau de exatidão, correção e clareza dos trabalhos executados</p>
+                          </a> </div>
+                      </div>
+                      <div class="collapse accordion-body" id="collapseGThree">
+                        <div class="widget-content">
+                       
+                            <label>
+                              <input type="radio" name="radios6" />  Seu trabalho é de difícil entendimento, apresentando erros e incorreções constantemente, mesmo sob orientação.</label>
+                            <label>
+                              <input type="radio" name="radios6" />  Seu trabalho é de entendimento razoável, eventualmente apresenta erros e incorreções, sendo necessário orientação  para corrigi-los.</label>
+                            <label>
+                              <input type="radio" name="radios6" />  eu trabalho é de fácil entendimento, raramente apresenta erros e incorreções e quase nunca precisa de orientações para serem corrigidos.</label>
+                            <label>
+                              <input type="radio" name="radios6" />  Seu trabalho é de excelente entendimento, não apresenta erros nem incorreções e não há necessidade de orientações.</label>
+                              <textarea class="span6"></textarea>  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGFour" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Resultados: O funcionário apresenta os resultados esperados de seu trabalho?</p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseGFour">
+                          <div class="widget-content">
+                             
+                                  <label>
+                                    <input type="radio" name="radios7" />  Nunca</label>
+                                  <label>
+                                    <input type="radio" name="radios7" />  Pouco</label>
+                                  <label>
+                                    <input type="radio" name="radios7" />  Algumas vezes</label>
+                                  <label>
+                                    <input type="radio" name="radios7" />  Muito</label>
+                                    <label>
+                                    <input type="radio" name="radios7" />  Quase sempre</label>
+                                    <textarea class="span6"></textarea>  
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseG9" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Eficiência: Quantidade de trabalho em relação a um intervalo de tempo satisfatório.</p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseG9">
+                          <div class="widget-content">
+                             
+                                  <label>
+                                    <input type="radio" name="radios9" />  Ultrapassa a quantidade de trabalho exigido; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios9" /> Apresenta uma quantidade satisfatória;</label>
+                                  <label>
+                                    <input type="radio" name="radios9" />  Apresenta uma quantidade suficiente para o trabalho exigido; </label>
+                                  <label>
+                                    <input type="radio" name="radios9" />  Apresenta uma quantidade abaixo do exigido.
+                                  </label>
+                                    
+                                    <textarea class="span6"></textarea>  
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseG10" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Eficácia: Resultados trabalhados em relação ao valor de gastos (custo benefício).</p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseG10">
+                          <div class="widget-content">
+                             
+                                  <label>
+                                    <input type="radio" name="radios10" /> Alta frequência de tarefas apresentadas com menos gastos que o esperado;
+ 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios10" />Certa frequência de tarefas apresentadas com menos gastos que o esperado;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios10" />  Sempre entrega tarefas próximo dos gastos esperados;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios10" />  Recorrentemente entrega tarefas acima dos tetos de gastos estabelecidos;
+
+                                  </label>
+                                    
+                                    <textarea class="span6"></textarea>  
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-pane">
+                      <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne1" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Capacitação: Capacidade de lidar com a adversidade (adaptar-se a novas situações, ambientes e pessoas)</p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse in accordion-body controls" id="collapseGOne1">
+                            <div class="widget-content">    
+                                <label>
+                                  <input type="radio" name="radios2" />   Adapta-se com facilidade às mudanças;
+                                </label>
+                                <label>
+                                  <input type="radio" name="radios2" />   Adapta-se com velocidade e efetividade acima do exigido;
+                                </label>
+                                <label>
+                                  <input type="radio" name="radios2" />  Adapta-se normalmente à ritmo próprio;</label>
+                                <label>
+                                  <input type="radio" name="radios2" />  Adapta-se de forma insatisfatória.</label>
+                                  <textarea class="span6"></textarea>    
+                              </div>
+                        </div>
+                      </div>
+                      <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo1" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Solução: Adota providências em situações não definidas pela
+                                chefia ou não previstas nos procedimentos.</p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse accordion-body controls" id="collapseGTwo1">
+                          <div class="widget-content">                              
+                                  <label>
+                                    <input type="radio" name="radios5" />   Tem facilidade em buscar soluções para situações imprevistas
+                                    do trabalho, quando solicitado;</label>
+                                  <label>
+                                    <input type="radio" name="radios5" />   Esforça-se para solucionar algumas situações imprevistas na
+                                    execução do trabalho;</label>
+                                  <label>
+                                    <input type="radio" name="radios5" />  Eventualmente apresenta soluções para situações imprevistas
+                                    do trabalho, quando solicitado;</label>
+                                  <label>
+                                    <input type="radio" name="radios5" />  Deixa de solucionar problemas decorrentes de situações
+                                    imprevistas na execução do trabalho.</label>
+
+                                    <textarea class="span6"></textarea>                                  
+                        </div>
+                        </div>
+                      </div>
+                      <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                          <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree1" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                            <p style="font-weight:bold">Assiduidade: Presença para a colaboração no local de trabalho dentro (e/ou fora) do horário estabelecido para o expediente da unidade.
+                              </p>
+                            </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseGThree1">
+                          <div class="widget-content">
+                              <label>
+                                  <input type="radio" name="radios6" />   Cumpre o horário e está sempre presente, mostrando-se disposto a atender às necessidades de trabalho;</label>
+                                <label>
+                                  <input type="radio" name="radios6" />   Cumpre o horário estabelecido e é pontual nos seus compromissos de trabalho;</label>
+                                <label>
+                                  <input type="radio" name="radios6" />  Normalmente não cumpre o horário estabelecido, mas, quando presente, atende às necessidades de trabalho;</label>
+                                <label>
+                                  <input type="radio" name="radios6" />   Nunca cumpre horário e está sempre ausente.
+                                </label>
+
+                                  <textarea class="span6" ></textarea>  
+                          </div>
+                        </div>
+                      </div>   
+                      
+                      <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree8" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Iniciativa: Apresentação de providências em situações não definidas pelos superiores ou não previstas nos procedimentos.
+                                </p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGThree8">
+                            <div class="widget-content">
+                                <label>
+                                    <input type="radio" name="radios8" />   Tem facilidade em buscar soluções para situações imprevistas do trabalho, quando solicitado; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios8" />   Esforça-se para solucionar algumas situações imprevistas na execução do trabalho; </label>
+                                  <label>
+                                    <input type="radio" name="radios8" />  Eventualmente apresenta soluções para situações imprevistas do trabalho, quando solicitado; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios8" />   Deixa de solucionar problemas decorrentes de situações imprevistas na execução do trabalho.
+                                  </label>
+  
+                                    <textarea class="span6" ></textarea>  
+                            </div>
+                          </div>
+                        </div> 
+                        <div class="accordion-group widget-box">
+                            <div class="accordion-heading">
+                              <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree11" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                                <p style="font-weight:bold">Comunicação: Reportagem de situações, resultados, problemas dentro da empresa para os superiores (objetividade, formatação, honestidade).
+                                  </p>
+                                </a> </div>
+                            </div>
+                            <div class="collapse accordion-body" id="collapseGThree11">
+                              <div class="widget-content">
+                                  <label>
+                                      <input type="radio" name="radios11" />   Comunicação independente se for exigido, sempre com objetividade e honestidade;
+ 
+                                    </label>
+                                    <label>
+                                      <input type="radio" name="radios11" />   Comunicação à medida da exigência, com honestidade e alguma objetividade;
+                                    </label>
+                                    <label>
+                                      <input type="radio" name="radios11" />  Comunicação à medida da exigência;
+ 
+                                    </label>
+                                    <label>
+                                      <input type="radio" name="radios11" />  Comunicação sempre fora do prazo exigido sem objetividade.
+
+                                    </label>
+    
+                                      <textarea class="span6" ></textarea>  
+                              </div>
+                            </div>
+                          </div> 
+
+                          <div class="accordion-group widget-box">
+                              <div class="accordion-heading">
+                                <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree14" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                                  <p style="font-weight:bold">Liderança: Influência para o funcionamento em grupo.
+
+                                    </p>
+                                  </a> </div>
+                              </div>
+                              <div class="collapse accordion-body" id="collapseGThree14">
+                                <div class="widget-content">
+                                    <label>
+                                        <input type="radio" name="radios14" />   Influência essencial no funcionamento em grupo;
+ 
+                                      </label>
+                                      <label>
+                                        <input type="radio" name="radios14" />   Influência importante no funcionamento em grupo;
+                                      </label>
+                                      <label>
+                                        <input type="radio" name="radios14" />  Influência suficiente para o funcionamento;
+ 
+                                      </label>
+                                      <label>
+                                        <input type="radio" name="radios14" />   Influência insatisfatória.
+
+                                      </label>
+      
+                                        <textarea class="span6" ></textarea>  
+                                </div>
+                              </div>
+                            </div> 
+                </div>
+                <div id="tab3" class="tab-pane">
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne13" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Conhecimento e Habilidades: Atende aos requisitos Conhecimentos e Habilidades estabelecidos.</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGOne13">
+                              <div class="widget-content">     
+                                  <label>
+                                      <input type="radio" name="radios13" />   Atende plenamente aos dois requisitos; 
+                                    </label>
+                                    <label>
+                                      <input type="radio" name="radios13" />   Atende apenas o requisito Habilidades; </label>
+                                    <label>
+                                      <input type="radio" name="radios13" />  Atende apenas o requisito Conhecimentos;  </label>
+                                    <label>
+                                      <input type="radio" name="radios13" />   Não atende os requisitos necessários para o desenvolvimento de sua função.
+
+                                    </label>
+    
+                                      <textarea class="span6" ></textarea> 
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo15" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Análise Crítica: Capacidade de identificar problemas e soluções, com menos custo/recurso possível.</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGTwo15">
+                            <div class="widget-content"> 
+                                <label>
+                                    <input type="radio" name="radios15" />   Demonstra ser acima do esperado e exigido;
+                                    ; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios15" />   Demonstra ser acima da média;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios15" />   Apresenta ser suficiente aos requisitos;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios15" />   Apresenta ter capacidades insatisfatórios.
+
+
+                                  </label>
+  
+                                    <textarea class="span6" ></textarea>     
+                          </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree20" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Técnica: Possui profundo conhecimento e capacidade em sua área ?</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGThree20">
+                            <div class="widget-content">
+                                <label>
+                                    <input type="radio" name="radios20" />   Não atende
+                                    ; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios20" />  Atende parcialmente;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios20" />   Atende o esperado;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios20" />   Supera o Esperado;
+
+
+                                  </label>
+  
+                                    <textarea class="span6" ></textarea>  
+                            </div>
+                          </div>
+                        </div>      
+                </div>
+                <div id="tab4" class="tab-pane">
+                  
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne3" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Disciplina: Obediência aos regulamentos e aos procedimentos.</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGOne3">
+                              <div class="widget-content"> 
+                                  <label>
+                                      <input type="radio" name="radios7" />   Sempre atende aos procedimentos e deveres, além de contribuir para a manutenção da ordem no ambiente de trabalho;</label>
+                                    <label>
+                                      <input type="radio" name="radios7" />   Mantém um comportamento satisfatório atendendo aos procedimentos da organização;</label>
+                                    <label>
+                                      <input type="radio" name="radios7" />  Eventualmente descumpre as determinações que lhes são atribuídas e tem um comportamento instável no grupo; </label>
+                                    <label>
+                                      <input type="radio" name="radios7" />   Demonstra resistência ao cumprir os procedimentos e deveres e sempre influencia negativamente o comportamento do grupo.
+
+                                    </label>
+    
+                                      <textarea class="span6" ></textarea>     
+                                  
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo12" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Responsabilidade: É comprometido com suas tarefas e com as metas estabelecidas pela Direção.</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGTwo12">
+                            <div class="widget-content">     
+                                <label>
+                                    <input type="radio" name="radios12" />  Conhece suas atribuições executando suas atividades acima das expectativas, antecipando-se às solicitações; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios12" />   Executa adequadamente as suas atividades de acordo com as metas estabelecidas para o seu departamento; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios12" />  Em algumas situações demonstra pouca atenção em relação a execução das atribuições do seu cargo;  </label>
+                                  <label>
+                                    <input type="radio" name="radios12" />   Não cumpre adequadamente suas atribuições necessitando de permanente orientação e controle.
+                                  </label>
+  
+                                    <textarea class="span6" ></textarea>   
+                          </div>
+                          </div>
+                        </div>
+                        <div class="accordion-group widget-box">
+                          <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree3" data-toggle="collapse"> <span class="icon"><i class="icon-circle-arrow-right"></i></span>
+                              <p style="font-weight:bold">Relação interpessoal: Relacionamento com outros profissionais.</p>
+                              </a> </div>
+                          </div>
+                          <div class="collapse accordion-body" id="collapseGThree3">
+                            <div class="widget-content">
+                                <label>
+                                    <input type="radio" name="radios16" />  Apresenta relacionamento estável e imprescindível para o networking da empresa/grupo; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios16" />   Apresenta relacionamento importante e agradável entre os funcionários;
+                                    to; 
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios16" />  Apresenta relacionamento satisfatório, pelos quais cumprem os requisitos e metas do trabalho;
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="radios16" />   Apresenta relacionamento instável e insatisfatório dentro da empresa/grupo.
+
+                                <textarea class="span6"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                       
+                     
+                  </div>
+              </div>
+          
+          <div class="form-actions">
+            <button type="submit" class="btn btn-success"  onclick="alert('Salvo com sucesso!')">Salvar</button>
+          </div>
+    </div>
+  </div></div>
+ 
+</div>
+<!--main-container-part-->
+
+<!--Footer-part-->
+<div class="row-fluid">
+    <div id="footer" class="span12">  <a href="http://themedesigner.in"></a> </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/matrix.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Consulta de Funcionários</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/uniform.css" />
+<link rel="stylesheet" href="css/select2.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Consulta de Funcionários</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">sair</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <input type="text" placeholder="Busque aqui..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Consulta de Funcionários</a>
+  <ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Página Inicial</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon-user"></i> <span>Funcionário</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="funcionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+        <li><a href="funcionario-consulta.html"><i class="icon-search">   </i> Consulta</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon-book"></i> <span>Questionário</span> <span class="label label-important">1</span></a>
+      <ul>
+        <li><a href="questionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+      </ul>
+    </li>
+    <li><a href="avaliacao.html"><i class="icon icon-tint"></i> <span>Avaliação</span></a></li>
+  </ul>
+</div>
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> 
+      <a href="index.html" title="Para página inicial" class="tip-bottom"><i class="icon-home"></i> Início</a>
+      <a href="#" class="current">Consulta de Funcionários</a>
+     </div>
+    <h1>Consulta de Funcionários</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+    
+ 
+   
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+            <h5>Tabela de Funcionários</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Cargo</th>
+                  <th>Última avaliação</th>
+                  <th>Porcentagem</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="gradeX">
+                  <td>Rpgério Santos Camargo</td>
+                  <td>Operador de Máquinas</td>
+                  <td>01/05/2019</td>
+                  <td class="center">80%</td>
+                </tr>
+                <tr class="gradeC">
+                  <td>Geraldo Farias</td>
+                  <td>Atendente</td>
+                  <td>06/05/2019</td>
+                  <td class="center">35%</td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Luana Correa Aguiar</td>
+                  <td>Secretária</td>
+                  <td>22/04/2019</td>
+                  <td class="center">100%</td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Paulo Rogério</td>
+                  <td>Estagiário</td>
+                  <td>22/04/2019</td>
+                  <td class="center">17%</td>
+                </tr>
+                <tr class="gradeA">
+                  <td>Cleiton Silva</td>
+                  <td>Analista</td>
+                  <td>22/04/2017</td>
+                  <td class="center">89%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="form-actions">
+              <span class="pull-right"><a type="submit" href="avaliacao-consulta.html" class="btn btn-success" />Consultar Avaliação</a></span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12">  <a href="http://themedesigner.in"></a> </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.tables.js"></script>
+</body>
+</html>

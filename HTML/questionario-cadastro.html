@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cadastro de Questões</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/colorpicker.css" />
+<link rel="stylesheet" href="css/datepicker.css" />
+<link rel="stylesheet" href="css/uniform.css" />
+<link rel="stylesheet" href="css/select2.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Cadastro de Questões</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Sair</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <input type="text" placeholder="Busque aqui..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-list"></i>Forms</a>
+  <ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Página Inicial</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon-user"></i> <span>Funcionário</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="funcionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+        <li><a href="funcionario-consulta.html"><i class="icon-search">   </i> Consulta</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon-book"></i> <span>Questionário</span> <span class="label label-important">1</span></a>
+      <ul>
+        <li><a href="questionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+
+      </ul>
+    </li>
+    <li><a href="avaliacao.html"><i class="icon icon-tint"></i> <span>Avaliação</span></a></li>
+  </ul>
+</div>
+
+<!--close-left-menu-stats-sidebar-->
+
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="index.html" title="Para inicial" class="tip-bottom"><i class="icon-home"></i> Início</a> <a href="#" class="current">Cadastro de Questões</a> </div>
+  <h1>Cadastro de Questões</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+
+    <div class="widget-box">
+      <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+        <h5>Questões</h5>
+      </div>
+      <div class="widget-content">
+        <div class="control-group">
+          <form class="form-horizontal"> 
+
+              <div class="control-group" style="width: 500px" >
+                  <label class="control-label">Tipo da avaliação</label>
+                  <div class="controls">
+                    <select >
+                      <option>Comportamento</option>
+                      <option>Desempenho</option>
+                      <option>Conhecimento Técnico</option>
+                      <option>Conduta</option>
+         
+                    </select>
+                  </div>
+                </div>
+
+              <div class="control-group">
+                  <label class="control-label">Pergunta :</label>
+                  <div class="controls">
+                    <input type="text" class="span6" placeholder="Pergunta" />
+                  </div>
+                </div>
+                <div class="control-group">
+           
+                    <div class="controls" style="margin-left: 1px; margin-top: 10px">
+                      <label class="control-label">Tipo de Resposta :    </label>
+                      <label><input type="radio" id="radio1" name="radio" />Alternativa</label>
+                      <label><input type="radio" id="radio2" name="radio" />Descritiva</label>
+                    </div>
+                </div>
+
+                  <div class="control-group" style="display: none" id="divAlternativa" name="divAlternativa" >
+                    <label class="control-label">Alternativa 1:</label>
+                    <div class="controls">
+                      <input type="text" class="span6" placeholder="Alternativa 1" />
+                    </div>
+
+                      <label class="control-label">Alternativa 2:</label>
+                      <div class="controls">
+                        <input type="text" class="span6" placeholder="Alternativa 2" />
+                      </div>
+                      <div class="controls">
+                      <button class="btn btn-info" style="display: none" id="btnAdicionar">Adicionar</button>
+                    </div>
+                  </div>
+          
+           
+            
+                  
+                
+
+                 <div class="form-actions">
+     
+                    <button type="submit" class="btn btn-success" onclick="alert('Salvo com sucesso!')">Salvar</button>
+                  </div>      
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+<!--Footer-part-->
+<div class="row-fluid">
+    <div id="footer" class="span12">  <a href="http://themedesigner.in"></a> </div>
+<!--end-Footer-part--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-colorpicker.js"></script> 
+<script src="js/bootstrap-datepicker.js"></script> 
+<script src="js/jquery.toggle.buttons.js"></script> 
+<script src="js/masked.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.form_common.js"></script> 
+<script src="js/wysihtml5-0.3.0.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/bootstrap-wysihtml5.js"></script> 
+<script>
+
+
+
+$("#radio1, #radio2").change(function () {
+        if ($("#radio1").is(":checked")) {
+         $("#divAlternativa").show();
+         $("#btnAdicionar").show(); 
+        }
+        else if ($("#radio2").is(":checked")) {
+          $("#divAlternativa").hide();
+          $("#btnAdicionar").hide(); 
+        } 
+  }); 
+
+
+
+
+</script>
+</body>
+</html>

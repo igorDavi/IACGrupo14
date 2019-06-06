@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Impressão de Relatório</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Cadastro de Funcionário</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Sair</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <input type="text" placeholder="Busque aqui..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-list"></i>Forms</a>
+  <ul>
+    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Início</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon-user"></i> <span>Funcionário</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="funcionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+        <li><a href="funcionario-consulta.html"><i class="icon-search">   </i> Consulta</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon-book"></i> <span>Questionário</span> <span class="label label-important">1</span></a>
+      <ul>
+        <li><a href="questionario-cadastro.html"><i class="icon-plus-sign"></i> Cadastro</a></li>
+      </ul>
+    </li>
+    <li><a href="avaliacao.html"><i class="icon icon-tint"></i> <span>Avaliação</span></a></li>
+  </ul>
+</div>
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Relatório</a> </div>
+    <h1></h1>
+    
+    
+  </div>
+  
+  <div class="container-fluid"><hr>
+    <div class="span9">
+        <table class="table table-bordered table-invoice">
+          <tbody>
+            <tr>
+            <tr>
+              <td class="width30">Nome do Funcionário:</td>
+              <td class="width70"><strong>João Guilherme Farias Costa</strong></td>
+            </tr>
+            <tr>
+              <td>Cargo:</td>
+              <td><strong>Analista de Sistemas- Sênior</strong></td>
+            </tr>
+            <tr>
+              <td>Data de Impressão:</td>
+              <td><strong>Junho 04, 2019</strong></td>
+              
+            </tr>
+            
+            
+            </tbody>
+            
+          
+        </table>
+        
+            
+      </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <div >
+          
+          <div>
+            
+              <div class="span11">
+     
+                  <div class="widget-box">
+                    <div class="widget-title bg_lo"   href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+                      <h5>Desempenho</h5>
+                    </div>
+                    <div class="widget-content nopadding updates collapse in" id="collapseG3">
+                      <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+                        <div class="update-done"><a title="" href="#"><strong>Organização: O funcionário é organizado em suas atividades?</strong></a> <span>Muito</span> </div>
+                        <div class="update-date"><span class="update-day">OK</span></div>
+                      </div>
+                      <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Qualidade: Grau de exatidão, correção e clareza dos trabalhos executados </strong></a> <span>Seu trabalho é de difícil entendimento, apresentando erros e incorreções constantemente, mesmo sob orientação.</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                      <div class="new-update clearfix"> <i class="icon-remove"></i> <span class="update-alert"> <a title="" href="#"><strong>Resultados: O funcionário apresenta os resultados esperados de seu trabalho?</strong></a> <span>Não Avaliado</span> </span> <span class="update-date"><span class="update-day"></span></span> </div>
+                      <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-done"> <a title="" href="#"><strong>Eficiência: Quantidade de trabalho em relação a um intervalo de tempo satisfatório.</strong></a> <span>Apresenta uma quantidade satisfatória;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                      <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Eficácia: Resultados trabalhados em relação ao valor de gastos (custo benefício).</strong></a> <span>Certa frequência de tarefas apresentadas com menos gastos que o esperado;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="widget-box">
+                      <div class="widget-title bg_lo"  href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+                        <h5>Comportamento</h5>
+                      </div>
+                      <div class="widget-content nopadding updates collapse in" id="collapseG3">
+                        <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+                          <div class="update-done"><a title="" href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a> <span>dolor sit amet, consectetur adipiscing eli</span> </div>
+                          <div class="update-date"><span class="update-day">OK</span></div>
+                        </div>
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Capacitação: Capacidade de lidar com a adversidade (adaptar-se a novas situações, ambientes e pessoas)</strong></a> <span>Adapta-se com velocidade e efetividade acima do exigido;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Solução: Adota providências em situações não definidas pela
+                          chefia ou não previstas nos procedimentos.</strong></a> <span>Eventualmente apresenta soluções para situações imprevistas
+                            do trabalho, quando solicitado;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Assiduidade: Presença para a colaboração no local de trabalho dentro (e/ou fora) do horário estabelecido para o expediente da unidade.</strong></a> <span>Nunca cumpre horário e está sempre ausente.</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+  
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Comunicação: Reportagem de situações, resultados, problemas dentro da empresa para os superiores (objetividade, formatação, honestidade). </strong></a> <span>Comunicação à medida da exigência, com honestidade e alguma objetividade;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                        <div class="new-update clearfix"> <i class="icon-remove"></i> <span class="update-alert"> <a title="" href="#"><strong>Liderança: Influência para o funcionamento em grupo.
+                        </strong></a> <span>Não avaliado</span> </span> <span class="update-date"><span class="update-day"></span></span> </div>
+                        
+                      </div>
+                    </div>
+            
+                    <div class="widget-box">
+                        <div class="widget-title bg_lo"  href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+                          <h5>Conhecimento Técnico</h5>
+                        </div>
+                        <div class="widget-content nopadding updates collapse in" id="collapseG3">
+                          <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+                            <div class="update-done"><a title="" href="#"><strong>Análise Crítica: Capacidade de identificar problemas e soluções, com menos custo/recurso possível.</strong></a> <span>Demonstra ser acima do esperado e exigido;</span> </div>
+                            <div class="update-date"><span class="update-day">OK</span></div>
+                          </div>
+                          <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-alert"> <a title="" href="#"><strong>Análise Crítica: Capacidade de identificar problemas e soluções, com menos custo/recurso possível.</strong></a> <span>Demonstra ser acima do esperado e exigido;</span> </span> <span class="update-date"><span class="update-day"></span></span> </div>
+                          <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-done"> <a title="" href="#"><strong>Técnica: Possui profundo conhecimento e capacidade em sua área ?</strong></a> <span>Atende parcialmente;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                        </div>
+                      </div>
+            
+                  <div class="widget-box">
+                      <div class="widget-title bg_lo"  href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+                        <h5>Conduta</h5>
+                      </div>
+                      <div class="widget-content nopadding updates collapse in" id="collapseG3">
+                        <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+                          <div class="update-done"><a title="" href="#"><strong>Disciplina: Obediência aos regulamentos e aos procedimentos.</strong></a> <span>Mantém um comportamento satisfatório atendendo aos procedimentos da organização;</span> </div>
+                          <div class="update-date"><span class="update-day">OK</span></div>
+                        </div>
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>Responsabilidade: É comprometido com suas tarefas e com as metas estabelecidas pela Direção. </strong></a> <span>Executa adequadamente as suas atividades de acordo com as metas estabelecidas para o seu departamento;</span> </span> <span class="update-date"><span class="update-day">OK</span></span> </div>
+                        <div class="new-update clearfix"> <i class="icon-ok-sign"></i> <span class="update-alert"> <a title="" href="#"><strong>Relação interpessoal: Relacionamento com outros profissionais.</strong></a> <span>Apresenta relacionamento estável e imprescindível para o networking da empresa/grupo; </span> </span> <span class="update-date"><span class="update-day"></span></span> </div>
+                      
+                      </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <span class="pull-right"><a type="submit" onClick="window.print()"  class="btn btn-success" />Imprimir relatório</a></span>
+                </div>
+                
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-part-->
+<div class="row-fluid">
+
+</div>
+<!--end-Footer-part--> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/matrix.js"></script>
+</body>
+</html>
